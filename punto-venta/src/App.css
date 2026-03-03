@@ -1,7 +1,33 @@
+/* 1. Reseteo básico para evitar márgenes fantasmas del navegador */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hacemos que todos los elementos respeten el tamaño con sus bordes */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* 2. El layout principal */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* 3. El contenedor derecho */
 .main-content {
-  /* Empuja el contenido hacia la derecha el mismo ancho que tiene el Sidebar */
   margin-left: 250px; 
-  padding: 24px; /* Un poco de espacio interno para que se vea bien */
-  min-height: 100vh; /* Asegura que ocupe toda la altura */
-  background-color: #ffffff;
+  width: calc(100% - 250px);
+  min-height: 100vh;
+  /* Aquí va el color de fondo de toda tu app (puse un gris súper clarito moderno) */
+  background-color: #adc0eb; 
+  display: flex;
+  flex-direction: column;
+}
+/* 4. El área donde va tu Home y las StatCards */
+.page-content {
+  padding: 30px; /* Movemos el padding aquí para que la cabecera arriba quede libre y pegada a los bordes */
+  flex: 1;
 }

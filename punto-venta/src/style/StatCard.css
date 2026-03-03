@@ -1,0 +1,51 @@
+.stat-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 24px;
+  width: 260px; /* Puedes ajustar el ancho según necesites */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); /* Sombra súper suave */
+  transition: transform 0.2s ease-in-out;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px); /* Pequeño efecto al pasar el mouse */
+}
+
+.stat-icon-wrapper {
+  background-color: #FFF4E5; /* Fondo circular naranjo clarito */
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.stat-icon {
+  color: #FFA726; /* Color vibrante de la bolsa */
+  font-size: 28px;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-info h3 {
+  color: #1E1E2F; /* Color oscuro para el número */
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+}
+
+.stat-info p {
+  color: #9E9E9E; /* Gris para el texto secundario */
+  font-size: 16px;
+  font-weight: 500;
+  margin: 8px 0 0 0;
+}
